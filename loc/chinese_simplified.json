@@ -23,7 +23,7 @@
 	"blt_mod_info_author" : "作者",
 	"blt_mod_info_contact" : "联系方式",
 	"blt_mod_info_min_sblt_version" : "所需的 RAID-SuperBLT 最低版本号：",
-	"blt_mod_info_min_sblt_ver_not_met" : "该模组需要更新版本的 RAID-SuperBLT 才能正常运作。",
+	"blt_mod_info_min_sblt_ver_not_met" : "该模组需要更新版本的 RAID-SuperBLT 才能正常运行。",
 
 	"blt_mod_state_enabled" : "已启用",
 	"blt_mod_state_enabled_desc" : "本模组已在游戏启动时加载完毕。",
