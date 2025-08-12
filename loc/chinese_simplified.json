@@ -10,6 +10,9 @@
 	"blt_libraries" : "$count 个运行库",
 	"blt_mod_icons" : "模组图标",
 
+	"blt_regular_mods_tab" : "Mods",
+	"blt_core_mods_tab" : "核心 / 依赖库",
+
 	"blt_mod_outdated" : "此模组为旧版本 BLT 模组且不再继续受支持；请联系开发者更新此模组至最新的 BLT 版本。您可能会在使用本模组时出现错误或闪退。",
 	"blt_mod_missing_dependencies" : "您未安装本模组依赖的其他模组，所以该模组已被禁用。",
 	"blt_mod_missing_dependency" : "    缺少: $dependency",
@@ -19,6 +22,8 @@
 
 	"blt_mod_info_author" : "作者",
 	"blt_mod_info_contact" : "联系方式",
+	"blt_mod_info_min_sblt_version" : "所需的 RAID-SuperBLT 最低版本号：",
+	"blt_mod_info_min_sblt_ver_not_met" : "该模组需要更新版本的 RAID-SuperBLT 才能正常运作。",
 
 	"blt_mod_state_enabled" : "已启用",
 	"blt_mod_state_enabled_desc" : "本模组已在游戏启动时加载完毕。",
@@ -48,17 +53,23 @@
 	"blt_mod_toggle_dev" : "切换开发者信息",
 	"blt_mod_toggle_dev_desc" : "显示/隐藏本模组的开发者信息。",
 
+	"blt_mod_open_contact" : "Open Contact Website",
+	"blt_mod_open_contact_desc" : "Opens Contact website of this mod.",
+
 	"blt_update_mod_title" : "$name 更新",
 	"blt_update_mod_up_to_date" : "$name 已经更新至最新版本。",
 	"blt_update_mod_error" : "无法检查本模组是否已经更新至最新版本。\n$reason",
 	"blt_update_mod_available" : "有新版本 $name 可用，下载任务已添加至下载管理器！",
 	"blt_update_mod_goto_manager" : "前去下载管理器",
+	"blt_update_mod_available_short": "有更新可用！",
+    "blt_update_mod_error_short": "错误：请检查当前更新状态",
+    "blt_update_now": "立即更新",
 
 	"blt_update_dll_title" : "关键更新",
 	"blt_update_dll_text" : "有新版本 BLT DLL 文件可用，您需要手动前去官方网站下载并更新。\n\n请尽快更新此关键更新以便修复游戏闪退的问题。",
 	"blt_update_dll_goto_website" : "前去官网下载",
 	"blt_update_later" : "稍后更新",
-	
+
 	"blt_download_manager" : "下载管理器",
 	"blt_download_ready" : "准备下载",
 	"blt_download_waiting" : "请稍后...",
@@ -69,6 +80,11 @@
 	"blt_download_failed" : "下载失败！是否重试？",
 	"blt_download_done" : "完成！",
 	"blt_download_all" : "全部更新",
+	"blt_downloads_available_sin" : "有 $COUNT 项更新可供下载。",
+	"blt_downloads_available_plu" : "有 $COUNT 项更新可供下载。 ",
+	"blt_download_relua_button" : "重新载入游戏",
+	"blt_download_relua_title" : "确定要重新载入游戏吗？",
+	"blt_download_relua_text" : "该操作将会在不重启游戏的情况下重新载入游戏所使用的 lua 代码（不包括游戏资源和 SuperBLT）。",
 
 	"blt_checking_updates" : "正在检查更新",
 	"blt_checking_updates_help" : "正在为您的模组检查更新，请稍后...",
@@ -78,8 +94,8 @@
 	"blt_checking_updates_none_required" : "已更新",
 	"blt_checking_updates_none_required_help" : "没有模组需要更新!",
 
-	"blt_settings" : "BLT设置",
-	"blt_settings_desc" : "改变 BLT 的设置",
+	"blt_settings" : "BLT 设置",
+	"blt_settings_desc" : "调整 BLT 相关的设置",
 
 	"blt_log_level_select" : "日志纪录级别",
 	"blt_log_level_select_desc" : "选择 BLT 日志纪录的信息的最低级别",
@@ -100,5 +116,31 @@
 	"blt_no_image" : "暂无图片",
 	"blt_no_name" : "暂无名称",
 	"blt_no_desc" : "暂无介绍"
+
+	"blt_openurl_title" : "打开链接",
+	"blt_openurl_text_browser" : "要在你的浏览器中打开以下链接吗？\n要访问的连接: %s",
+	"blt_openurl_text_steamoverlay" : "要在 Steam 覆盖界面中打开以下链接吗？\n要访问的连接: %s",
+
+	"blt_devinfo" : "开发者信息",
+	"blt_devinfo_path" : "模组存放路径：",
+	"blt_devinfo_loadprio" : "载入优先级",
+	"blt_devinfo_disablable" : "可禁用",
+	"blt_devinfo_allowsafemode" : "可在安全模式中使用",
+	"blt_devinfo_hooks" : "Hooks",
+	"blt_devinfo_nohooks" : "No Hooks",
+	"blt_devinfo_prehooks" : "Pre-Hooks",
+	"blt_devinfo_noprehooks" : "No Pre-Hooks",
+	"blt_devinfo_persistentscripts" : "Persistent Scripts",
+	"blt_devinfo_nopersistentscripts" : "No Persistent Scripts",
+
+	"blt_infobtn_enable_update" : "启用自动更新",
+	"blt_infobtn_disable_update" : "禁用自动更新",
+	"blt_infobtn_checknow" : "立即检查更新",
+	"blt_infobtn_enable_state" : "已启用",
+	"blt_infobtn_disable_state" : "已禁用",
+	"blt_infobtn_contact" : "联系作者",
+
+	"blt_download_manager_header_mod" : "下载 / 模组",
+	"blt_download_manager_header_download_status" : "当前状态："
 
 }
